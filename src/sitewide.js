@@ -6,60 +6,60 @@
 // outoforder = optional message to display in top-left of county page, indicating that this county data are questionable
 // exceptlayers = skip these layers when loading the data profile, for counties to opt-out from individual layers
 const PARTICIPATING_COUNTIES = [
-  { countyfp: "001", name: "Alamance", profile: 'fullmodel', outoforder:"Polling location modeling will be provided for this county soon", datafootnote:"", exceptlayers: []  },
-  { countyfp: "019", name: "Brunswick", profile: 'fullmodel', outoforder:"Polling location modeling will be provided for this county soon", datafootnote:"", exceptlayers: []  },
-  { countyfp: "021", name: "Buncombe", profile: 'fullmodel', outoforder:"Polling location modeling will be provided for this county soon", datafootnote:"", exceptlayers: []  },
-  { countyfp: "023", name: "Burke", profile: 'fullmodel', outoforder:"Polling location modeling will be provided for this county soon", datafootnote:"", exceptlayers: []  },
-  { countyfp: "025", name: "Cabarrus", profile: 'fullmodel', outoforder:"Polling location modeling will be provided for this county soon", datafootnote:"", exceptlayers: []  },
-  { countyfp: "027", name: "Caldwell", profile: 'fullmodel', outoforder:"Polling location modeling will be provided for this county soon", datafootnote:"", exceptlayers: []  },
-  { countyfp: "031", name: "Carteret", profile: 'fullmodel', outoforder:"Polling location modeling will be provided for this county soon", datafootnote:"", exceptlayers: []  },
-  { countyfp: "035", name: "Catawba", profile: 'fullmodel', outoforder:"Polling location modeling will be provided for this county soon", datafootnote:"", exceptlayers: []  },
-  { countyfp: "037", name: "Chatham", profile: 'fullmodel', outoforder:"Polling location modeling will be provided for this county soon", datafootnote:"", exceptlayers: []  },
-  { countyfp: "045", name: "Cleveland", profile: 'fullmodel', outoforder:"Polling location modeling will be provided for this county soon", datafootnote:"", exceptlayers: []  },
-  { countyfp: "047", name: "Columbus", profile: 'fullmodel', outoforder:"Polling location modeling will be provided for this county soon", datafootnote:"", exceptlayers: []  },
-  { countyfp: "049", name: "Craven", profile: 'fullmodel', outoforder:"Polling location modeling will be provided for this county soon", datafootnote:"", exceptlayers: []  },
-  { countyfp: "051", name: "Cumberland", profile: 'fullmodel', outoforder:"Polling location modeling will be provided for this county soon", datafootnote:"", exceptlayers: []  },
-  { countyfp: "057", name: "Davidson", profile: 'fullmodel', outoforder:"Polling location modeling will be provided for this county soon", datafootnote:"", exceptlayers: []  },
-  { countyfp: "061", name: "Duplin", profile: 'fullmodel', outoforder:"Polling location modeling will be provided for this county soon", datafootnote:"", exceptlayers: []  },
-  { countyfp: "063", name: "Durham", profile: 'fullmodel', outoforder:"Polling location modeling will be provided for this county soon", datafootnote:"", exceptlayers: []  },
-  { countyfp: "065", name: "Edgecombe", profile: 'fullmodel', outoforder:"Polling location modeling will be provided for this county soon", datafootnote:"", exceptlayers: []  },
-  { countyfp: "067", name: "Forsyth", profile: 'fullmodel', outoforder:"Polling location modeling will be provided for this county soon", datafootnote:"", exceptlayers: []  },
-  { countyfp: "069", name: "Franklin", profile: 'fullmodel', outoforder:"Polling location modeling will be provided for this county soon", datafootnote:"", exceptlayers: []  },
-  { countyfp: "071", name: "Gaston", profile: 'fullmodel', outoforder:"Polling location modeling will be provided for this county soon", datafootnote:"", exceptlayers: []  },
-  { countyfp: "077", name: "Granville", profile: 'fullmodel', outoforder:"Polling location modeling will be provided for this county soon", datafootnote:"", exceptlayers: []  },
-  { countyfp: "081", name: "Guilford", profile: 'fullmodel', outoforder:"Polling location modeling will be provided for this county soon", datafootnote:"", exceptlayers: []  },
-  { countyfp: "083", name: "Halifax", profile: 'fullmodel', outoforder:"Polling location modeling will be provided for this county soon", datafootnote:"", exceptlayers: []  },
-  { countyfp: "085", name: "Harnett", profile: 'fullmodel', outoforder:"Polling location modeling will be provided for this county soon", datafootnote:"", exceptlayers: []  },
-  { countyfp: "087", name: "Haywood", profile: 'fullmodel', outoforder:"Polling location modeling will be provided for this county soon", datafootnote:"", exceptlayers: []  },
-  { countyfp: "089", name: "Henderson", profile: 'fullmodel', outoforder:"Polling location modeling will be provided for this county soon", datafootnote:"", exceptlayers: []  },
-  { countyfp: "093", name: "Hoke", profile: 'fullmodel', outoforder:"Polling location modeling will be provided for this county soon", datafootnote:"", exceptlayers: []  },
-  { countyfp: "097", name: "Iredell", profile: 'fullmodel', outoforder:"Polling location modeling will be provided for this county soon", datafootnote:"", exceptlayers: []  },
-  { countyfp: "101", name: "Johnston", profile: 'fullmodel', outoforder:"Polling location modeling will be provided for this county soon", datafootnote:"", exceptlayers: []  },
-  { countyfp: "105", name: "Lee", profile: 'fullmodel', outoforder:"Polling location modeling will be provided for this county soon", datafootnote:"", exceptlayers: []  },
-  { countyfp: "107", name: "Lenoir", profile: 'fullmodel', outoforder:"Polling location modeling will be provided for this county soon", datafootnote:"", exceptlayers: []  },
-  { countyfp: "109", name: "Lincoln", profile: 'fullmodel', outoforder:"Polling location modeling will be provided for this county soon", datafootnote:"", exceptlayers: []  },
-  { countyfp: "119", name: "Mecklenburg", profile: 'fullmodel', outoforder:"Polling location modeling will be provided for this county soon", datafootnote:"", exceptlayers: []  },
-  { countyfp: "125", name: "Moore", profile: 'fullmodel', outoforder:"Polling location modeling will be provided for this county soon", datafootnote:"", exceptlayers: []  },
-  { countyfp: "127", name: "Nash", profile: 'fullmodel', outoforder:"Polling location modeling will be provided for this county soon", datafootnote:"", exceptlayers: []  },
-  { countyfp: "129", name: "New Hanover", profile: 'fullmodel', outoforder:"Polling location modeling will be provided for this county soon", datafootnote:"", exceptlayers: []  },
-  { countyfp: "133", name: "Onslow", profile: 'fullmodel', outoforder:"Polling location modeling will be provided for this county soon", datafootnote:"", exceptlayers: []  },
-  { countyfp: "135", name: "Orange", profile: 'fullmodel', outoforder:"Polling location modeling will be provided for this county soon", datafootnote:"", exceptlayers: []  },
-  { countyfp: "141", name: "Pender", profile: 'fullmodel', outoforder:"Polling location modeling will be provided for this county soon", datafootnote:"", exceptlayers: []  },
-  { countyfp: "147", name: "Pitt", profile: 'fullmodel', outoforder:"Polling location modeling will be provided for this county soon", datafootnote:"", exceptlayers: []  },
-  { countyfp: "151", name: "Randolph", profile: 'fullmodel', outoforder:"Polling location modeling will be provided for this county soon", datafootnote:"", exceptlayers: []  },
-  { countyfp: "155", name: "Robeson", profile: 'fullmodel', outoforder:"Polling location modeling will be provided for this county soon", datafootnote:"", exceptlayers: []  },
-  { countyfp: "157", name: "Rockingham", profile: 'fullmodel', outoforder:"Polling location modeling will be provided for this county soon", datafootnote:"", exceptlayers: []  },
-  { countyfp: "159", name: "Rowan", profile: 'fullmodel', outoforder:"Polling location modeling will be provided for this county soon", datafootnote:"", exceptlayers: []  },
-  { countyfp: "161", name: "Rutherford", profile: 'fullmodel', outoforder:"Polling location modeling will be provided for this county soon", datafootnote:"", exceptlayers: []  },
-  { countyfp: "163", name: "Sampson", profile: 'fullmodel', outoforder:"Polling location modeling will be provided for this county soon", datafootnote:"", exceptlayers: []  },
-  { countyfp: "167", name: "Stanly", profile: 'fullmodel', outoforder:"Polling location modeling will be provided for this county soon", datafootnote:"", exceptlayers: []  },
-  { countyfp: "171", name: "Surry", profile: 'fullmodel', outoforder:"Polling location modeling will be provided for this county soon", datafootnote:"", exceptlayers: []  },
-  { countyfp: "179", name: "Union", profile: 'fullmodel', outoforder:"Polling location modeling will be provided for this county soon", datafootnote:"", exceptlayers: []  },
-  { countyfp: "183", name: "Wake", profile: 'fullmodel', outoforder:"Polling location modeling will be provided for this county soon", datafootnote:"", exceptlayers: []  },
-  { countyfp: "189", name: "Watauga", profile: 'fullmodel', outoforder:"Polling location modeling will be provided for this county soon", datafootnote:"", exceptlayers: []  },
-  { countyfp: "191", name: "Wayne", profile: 'fullmodel', outoforder:"Polling location modeling will be provided for this county soon", datafootnote:"", exceptlayers: []  },
-  { countyfp: "193", name: "Wilkes", profile: 'fullmodel', outoforder:"Polling location modeling will be provided for this county soon", datafootnote:"", exceptlayers: []  },
-  { countyfp: "195", name: "Wilson", profile: 'fullmodel', outoforder:"Polling location modeling will be provided for this county soon", datafootnote:"", exceptlayers: []  },
+  { countyfp: "001", name: "Alamance", profile: 'lite', outoforder:"Polling location modeling will be provided for this county soon", datafootnote:"", exceptlayers: []  },
+  { countyfp: "019", name: "Brunswick", profile: 'lite', outoforder:"Polling location modeling will be provided for this county soon", datafootnote:"", exceptlayers: []  },
+  { countyfp: "021", name: "Buncombe", profile: 'lite', outoforder:"Polling location modeling will be provided for this county soon", datafootnote:"", exceptlayers: []  },
+  { countyfp: "023", name: "Burke", profile: 'lite', outoforder:"Polling location modeling will be provided for this county soon", datafootnote:"", exceptlayers: []  },
+  { countyfp: "025", name: "Cabarrus", profile: 'lite', outoforder:"Polling location modeling will be provided for this county soon", datafootnote:"", exceptlayers: []  },
+  { countyfp: "027", name: "Caldwell", profile: 'lite', outoforder:"Polling location modeling will be provided for this county soon", datafootnote:"", exceptlayers: []  },
+  { countyfp: "031", name: "Carteret", profile: 'lite', outoforder:"Polling location modeling will be provided for this county soon", datafootnote:"", exceptlayers: []  },
+  { countyfp: "035", name: "Catawba", profile: 'lite', outoforder:"Polling location modeling will be provided for this county soon", datafootnote:"", exceptlayers: []  },
+  { countyfp: "037", name: "Chatham", profile: 'lite', outoforder:"Polling location modeling will be provided for this county soon", datafootnote:"", exceptlayers: []  },
+  { countyfp: "045", name: "Cleveland", profile: 'lite', outoforder:"Polling location modeling will be provided for this county soon", datafootnote:"", exceptlayers: []  },
+  { countyfp: "047", name: "Columbus", profile: 'lite', outoforder:"Polling location modeling will be provided for this county soon", datafootnote:"", exceptlayers: []  },
+  { countyfp: "049", name: "Craven", profile: 'lite', outoforder:"Polling location modeling will be provided for this county soon", datafootnote:"", exceptlayers: []  },
+  { countyfp: "051", name: "Cumberland", profile: 'lite', outoforder:"Polling location modeling will be provided for this county soon", datafootnote:"", exceptlayers: []  },
+  { countyfp: "057", name: "Davidson", profile: 'lite', outoforder:"Polling location modeling will be provided for this county soon", datafootnote:"", exceptlayers: []  },
+  { countyfp: "061", name: "Duplin", profile: 'lite', outoforder:"Polling location modeling will be provided for this county soon", datafootnote:"", exceptlayers: []  },
+  { countyfp: "063", name: "Durham", profile: 'lite', outoforder:"Polling location modeling will be provided for this county soon", datafootnote:"", exceptlayers: []  },
+  { countyfp: "065", name: "Edgecombe", profile: 'lite', outoforder:"Polling location modeling will be provided for this county soon", datafootnote:"", exceptlayers: []  },
+  { countyfp: "067", name: "Forsyth", profile: 'lite', outoforder:"Polling location modeling will be provided for this county soon", datafootnote:"", exceptlayers: []  },
+  { countyfp: "069", name: "Franklin", profile: 'lite', outoforder:"Polling location modeling will be provided for this county soon", datafootnote:"", exceptlayers: []  },
+  { countyfp: "071", name: "Gaston", profile: 'lite', outoforder:"Polling location modeling will be provided for this county soon", datafootnote:"", exceptlayers: []  },
+  { countyfp: "077", name: "Granville", profile: 'lite', outoforder:"Polling location modeling will be provided for this county soon", datafootnote:"", exceptlayers: []  },
+  { countyfp: "081", name: "Guilford", profile: 'lite', outoforder:"Polling location modeling will be provided for this county soon", datafootnote:"", exceptlayers: []  },
+  { countyfp: "083", name: "Halifax", profile: 'lite', outoforder:"Polling location modeling will be provided for this county soon", datafootnote:"", exceptlayers: []  },
+  { countyfp: "085", name: "Harnett", profile: 'lite', outoforder:"Polling location modeling will be provided for this county soon", datafootnote:"", exceptlayers: []  },
+  { countyfp: "087", name: "Haywood", profile: 'lite', outoforder:"Polling location modeling will be provided for this county soon", datafootnote:"", exceptlayers: []  },
+  { countyfp: "089", name: "Henderson", profile: 'lite', outoforder:"Polling location modeling will be provided for this county soon", datafootnote:"", exceptlayers: []  },
+  { countyfp: "093", name: "Hoke", profile: 'lite', outoforder:"Polling location modeling will be provided for this county soon", datafootnote:"", exceptlayers: []  },
+  { countyfp: "097", name: "Iredell", profile: 'lite', outoforder:"Polling location modeling will be provided for this county soon", datafootnote:"", exceptlayers: []  },
+  { countyfp: "101", name: "Johnston", profile: 'lite', outoforder:"Polling location modeling will be provided for this county soon", datafootnote:"", exceptlayers: []  },
+  { countyfp: "105", name: "Lee", profile: 'lite', outoforder:"Polling location modeling will be provided for this county soon", datafootnote:"", exceptlayers: []  },
+  { countyfp: "107", name: "Lenoir", profile: 'lite', outoforder:"Polling location modeling will be provided for this county soon", datafootnote:"", exceptlayers: []  },
+  { countyfp: "109", name: "Lincoln", profile: 'lite', outoforder:"Polling location modeling will be provided for this county soon", datafootnote:"", exceptlayers: []  },
+  { countyfp: "119", name: "Mecklenburg", profile: 'lite', outoforder:"Polling location modeling will be provided for this county soon", datafootnote:"", exceptlayers: []  },
+  { countyfp: "125", name: "Moore", profile: 'lite', outoforder:"Polling location modeling will be provided for this county soon", datafootnote:"", exceptlayers: []  },
+  { countyfp: "127", name: "Nash", profile: 'lite', outoforder:"Polling location modeling will be provided for this county soon", datafootnote:"", exceptlayers: []  },
+  { countyfp: "129", name: "New Hanover", profile: 'lite', outoforder:"Polling location modeling will be provided for this county soon", datafootnote:"", exceptlayers: []  },
+  { countyfp: "133", name: "Onslow", profile: 'lite', outoforder:"Polling location modeling will be provided for this county soon", datafootnote:"", exceptlayers: []  },
+  { countyfp: "135", name: "Orange", profile: 'lite', outoforder:"Polling location modeling will be provided for this county soon", datafootnote:"", exceptlayers: []  },
+  { countyfp: "141", name: "Pender", profile: 'lite', outoforder:"Polling location modeling will be provided for this county soon", datafootnote:"", exceptlayers: []  },
+  { countyfp: "147", name: "Pitt", profile: 'lite', outoforder:"Polling location modeling will be provided for this county soon", datafootnote:"", exceptlayers: []  },
+  { countyfp: "151", name: "Randolph", profile: 'lite', outoforder:"Polling location modeling will be provided for this county soon", datafootnote:"", exceptlayers: []  },
+  { countyfp: "155", name: "Robeson", profile: 'lite', outoforder:"Polling location modeling will be provided for this county soon", datafootnote:"", exceptlayers: []  },
+  { countyfp: "157", name: "Rockingham", profile: 'lite', outoforder:"Polling location modeling will be provided for this county soon", datafootnote:"", exceptlayers: []  },
+  { countyfp: "159", name: "Rowan", profile: 'lite', outoforder:"Polling location modeling will be provided for this county soon", datafootnote:"", exceptlayers: []  },
+  { countyfp: "161", name: "Rutherford", profile: 'lite', outoforder:"Polling location modeling will be provided for this county soon", datafootnote:"", exceptlayers: []  },
+  { countyfp: "163", name: "Sampson", profile: 'lite', outoforder:"Polling location modeling will be provided for this county soon", datafootnote:"", exceptlayers: []  },
+  { countyfp: "167", name: "Stanly", profile: 'lite', outoforder:"Polling location modeling will be provided for this county soon", datafootnote:"", exceptlayers: []  },
+  { countyfp: "171", name: "Surry", profile: 'lite', outoforder:"Polling location modeling will be provided for this county soon", datafootnote:"", exceptlayers: []  },
+  { countyfp: "179", name: "Union", profile: 'lite', outoforder:"Polling location modeling will be provided for this county soon", datafootnote:"", exceptlayers: []  },
+  { countyfp: "183", name: "Wake", profile: 'lite', outoforder:"Polling location modeling will be provided for this county soon", datafootnote:"", exceptlayers: []  },
+  { countyfp: "189", name: "Watauga", profile: 'lite', outoforder:"Polling location modeling will be provided for this county soon", datafootnote:"", exceptlayers: []  },
+  { countyfp: "191", name: "Wayne", profile: 'lite', outoforder:"Polling location modeling will be provided for this county soon", datafootnote:"", exceptlayers: []  },
+  { countyfp: "193", name: "Wilkes", profile: 'lite', outoforder:"Polling location modeling will be provided for this county soon", datafootnote:"", exceptlayers: []  },
+  { countyfp: "195", name: "Wilson", profile: 'lite', outoforder:"Polling location modeling will be provided for this county soon", datafootnote:"", exceptlayers: []  },
 ];
 
 const getParticipatingCountyInfo = function (countyfp) {
@@ -102,7 +102,7 @@ const getParticipatingCountyInfo = function (countyfp) {
 const BOUNDSTYLE_DEFAULT = { fillColor: 'white', weight: 1, opacity: 0.5, color: 'black', fillOpacity: 0.5 };
 const BOUNDSTYLE_PARTICIPATING = { fillColor: '#fecd1b', weight: 1, opacity: 0.5, color: 'black', fillOpacity: 0.5 };
 const BOUNDSTYLE_FULL = { fillColor: '#fecd1b', weight: 1, opacity: 0.5, color: 'black', fillOpacity: 0.75 };
-const BOUNDSTYLE_fullmodel = { fillColor: '#fecd1b', weight: 1, opacity: 0.5, color: 'black', fillOpacity: 0.33 };
+const BOUNDSTYLE_LITE = { fillColor: '#fecd1b', weight: 1, opacity: 0.5, color: 'black', fillOpacity: 0.33 };
 const BOUNDSTYLE_MOUSEOVER = { weight: 5, color: 'black', fillOpacity: 0.15 };
 
 // in county.html to view a single county, the style to use for county boundary
@@ -138,7 +138,7 @@ const BASEMAP_OPTIONS = [
     */
     {
         type: 'xyz',
-        label: 'Satelfullmodel',
+        label: 'Satellite',
         url: 'http://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}',
         attribution: 'Tiles &copy; Esri &mdash; Source: Esri, i-cubed, USDA, USGS, AEX, GeoEye, Getmapping, Aerogrid, IGN, IGP, UPR-EGP, and the GIS User Community',
     },
@@ -441,7 +441,7 @@ DATA_LAYERS.poi = {
 
 // and now the data profiles, which are collections of DATA_LAYERS to offer to each county
 // full model = all of the layers
-// fullmodel = all layers EXCEPT suggested areas
+// lite = all layers EXCEPT suggested areas
 const DATA_PROFILES = {};
 
 DATA_PROFILES.fullmodel = {
@@ -469,10 +469,10 @@ DATA_PROFILES.fullmodel = {
     ],
 };
 
-DATA_PROFILES.fullmodel = Object.assign({}, DATA_PROFILES.fullmodel);
-DATA_PROFILES.fullmodel.suggestedareas = [];
-DATA_PROFILES.fullmodel.additionalareas = [];
-DATA_PROFILES.fullmodel.sitingcriteria = [
+DATA_PROFILES.lite = Object.assign({}, DATA_PROFILES.fullmodel);
+DATA_PROFILES.lite.suggestedareas = [];
+DATA_PROFILES.lite.additionalareas = [];
+DATA_PROFILES.lite.sitingcriteria = [
     DATA_LAYERS.cvapdens, DATA_LAYERS.job_dens,
     DATA_LAYERS.tot_elignonreg_prc,
     DATA_LAYERS.prcdisabled, DATA_LAYERS.prc_nonengprof, DATA_LAYERS.prc_caraccess_final, DATA_LAYERS.prc_pov_final, DATA_LAYERS.prc_youth_final,
@@ -480,7 +480,7 @@ DATA_PROFILES.fullmodel.sitingcriteria = [
     DATA_LAYERS.popdens,
     DATA_LAYERS.vbm_rate_tot, DATA_LAYERS.vbm_rate_asn, DATA_LAYERS.vbm_rate_lat, DATA_LAYERS.vbm_rate_youth,
 ];
-DATA_PROFILES.fullmodel.pointsofinterest = [
+DATA_PROFILES.lite.pointsofinterest = [
     DATA_LAYERS.pripoll2020,
 ];
 
