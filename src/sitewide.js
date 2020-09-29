@@ -102,7 +102,7 @@ const getParticipatingCountyInfo = function (countyfp) {
 const BOUNDSTYLE_DEFAULT = { fillColor: 'white', weight: 1, opacity: 0.5, color: 'black', fillOpacity: 0.5 };
 const BOUNDSTYLE_PARTICIPATING = { fillColor: '#fecd1b', weight: 1, opacity: 0.5, color: 'black', fillOpacity: 0.5 };
 const BOUNDSTYLE_FULL = { fillColor: '#fecd1b', weight: 1, opacity: 0.5, color: 'black', fillOpacity: 0.75 };
-const BOUNDSTYLE_fullmodel = { fillColor: '#fecd1b', weight: 1, opacity: 0.5, color: 'black', fillOpacity: 0.33 };
+const BOUNDSTYLE_LITE = { fillColor: '#fecd1b', weight: 1, opacity: 0.5, color: 'black', fillOpacity: 0.33 };
 const BOUNDSTYLE_MOUSEOVER = { weight: 5, color: 'black', fillOpacity: 0.15 };
 
 // in county.html to view a single county, the style to use for county boundary
@@ -138,7 +138,7 @@ const BASEMAP_OPTIONS = [
     */
     {
         type: 'xyz',
-        label: 'Satelfullmodel',
+        label: 'Satellite',
         url: 'http://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}',
         attribution: 'Tiles &copy; Esri &mdash; Source: Esri, i-cubed, USDA, USGS, AEX, GeoEye, Getmapping, Aerogrid, IGN, IGP, UPR-EGP, and the GIS User Community',
     },
@@ -441,7 +441,7 @@ DATA_LAYERS.poi = {
 
 // and now the data profiles, which are collections of DATA_LAYERS to offer to each county
 // full model = all of the layers
-// fullmodel = all layers EXCEPT suggested areas
+// lite = all layers EXCEPT suggested areas
 const DATA_PROFILES = {};
 
 DATA_PROFILES.fullmodel = {
@@ -469,10 +469,10 @@ DATA_PROFILES.fullmodel = {
     ],
 };
 
-DATA_PROFILES.fullmodel = Object.assign({}, DATA_PROFILES.fullmodel);
-DATA_PROFILES.fullmodel.suggestedareas = [];
-DATA_PROFILES.fullmodel.additionalareas = [];
-DATA_PROFILES.fullmodel.sitingcriteria = [
+DATA_PROFILES.lite = Object.assign({}, DATA_PROFILES.fullmodel);
+DATA_PROFILES.lite.suggestedareas = [];
+DATA_PROFILES.lite.additionalareas = [];
+DATA_PROFILES.lite.sitingcriteria = [
     DATA_LAYERS.cvapdens, DATA_LAYERS.job_dens,
     DATA_LAYERS.tot_elignonreg_prc,
     DATA_LAYERS.prcdisabled, DATA_LAYERS.prc_nonengprof, DATA_LAYERS.prc_caraccess_final, DATA_LAYERS.prc_pov_final, DATA_LAYERS.prc_youth_final,
@@ -480,7 +480,7 @@ DATA_PROFILES.fullmodel.sitingcriteria = [
     DATA_LAYERS.popdens,
     DATA_LAYERS.vbm_rate_tot, DATA_LAYERS.vbm_rate_asn, DATA_LAYERS.vbm_rate_lat, DATA_LAYERS.vbm_rate_youth,
 ];
-DATA_PROFILES.fullmodel.pointsofinterest = [
+DATA_PROFILES.lite.pointsofinterest = [
     DATA_LAYERS.pripoll2020,
 ];
 
