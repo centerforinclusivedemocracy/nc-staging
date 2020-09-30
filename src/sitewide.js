@@ -181,7 +181,7 @@ const DATA_LAYERS = {};
 
 DATA_LAYERS.four_day_sites = {
     id: 'four_day_sites',
-    title: "Suggested Areas for 4 Day Voting Locations",
+    title: "Suggested Areas for Election Day Voting Locations",
     csvfile: 'model_files/four_day_sites.csv',
     circle: { radius: 400, opacity: 0.8, color: 'black', weight: 1, fillColor: 'quantile', fillOpacity: 0.8 },
     quantilefield: 'center_score', quantilecolors: SCORING_COLOR_RAMP, breaksource: 'sitescores', // because fillColor == quantile
@@ -191,7 +191,7 @@ DATA_LAYERS.four_day_sites = {
 };
 DATA_LAYERS.eleven_day_sites = {
     id: 'eleven_day_sites',
-    title: "Suggested Areas for 11 Day Voting Locations",
+    title: "Suggested Areas for Early Voting Locations",
     csvfile: 'model_files/eleven_day_sites.csv',
     circle: { radius: 400, opacity: 0.8, color: 'black', weight: 1, fillColor: 'quantile', fillOpacity: 0.8 },
     quantilefield: 'center_score', quantilecolors: SCORING_COLOR_RAMP, breaksource: 'sitescores', // because fillColor == quantile
