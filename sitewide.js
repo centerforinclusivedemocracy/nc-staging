@@ -450,7 +450,7 @@ const DATA_PROFILES = {};
 
 DATA_PROFILES.fullmodel = {
     suggestedareas: [
-        DATA_LAYERS.four_day_sites, DATA_LAYERS.dropbox_sites, DATA_LAYERS.all_sites_scored,
+        DATA_LAYERS.four_day_sites, DATA_LAYERS.eleven_day_sites, DATA_LAYERS.dropbox_sites, DATA_LAYERS.all_sites_scored,
     ],
     additionalareas: [
         DATA_LAYERS.additional_sites_model, DATA_LAYERS.additional_sites_distance,
