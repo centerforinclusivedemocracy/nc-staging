@@ -358,7 +358,7 @@ DATA_LAYERS.vbm_rate_tot = {
 };
 DATA_LAYERS.vbm_rate_asn = {
     id: 'vbm_rate_asn',
-    title: "2016 2016 Vote by Mail Rate (Asian-American)",
+    title: "2016 Vote by Mail Rate (Asian-American)",
     scoresource: 'indicatordata', scorefield:  'vbm_rate_asn',
     quantilefield: 'vbm_rate_asn', quantilecolors: CRITERIA_COLOR_RAMP, breaksource: 'indicatordata', // because fillColor == quantile
     legendformat: 'percent',
